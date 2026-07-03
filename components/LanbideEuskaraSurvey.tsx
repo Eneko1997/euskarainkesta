@@ -80,17 +80,17 @@ const SMILEYS = [
         value: "dificultad",
         type: "neutral",
         eu: "Ez dut egin ohi, zailtasun arinak ditudalako",
-        es: "No suelo hacerlo, con leves dificultades",
-        shortEu: "Zailtasunekin",
-        shortEs: "Zailtasunekin / Con dificultad",
+        es: "No suelo hacerlo por tener leves dificultades",
+        shortEu: "Zailtasunez",
+        shortEs: "Zailtasunez / Con dificultad",
     },
     {
         value: "sinCapacidad",
         type: "sad",
-        eu: "Ez dut egin ohi, gaitasun eskasa dudalako",
-        es: "No suelo hacerlo, capacidad escasa",
-        shortEu: "Eskasa",
-        shortEs: "Eskasa / Capacidad escasa",
+        eu: "Ez dut egin ohi, zailtasun asko izateagatik",
+        es: "No suelo hacerlo por tener bastantes dificultades",
+        shortEu: "Zailtasun handiz",
+        shortEs: "Zailtasun handiz / Importantes dificultades",
     },
 ] as const
 
@@ -108,7 +108,7 @@ const oralQuestions = [
     {
         id: "o3",
         eu: "Euskaraz ez badakit, euskaraz dakien lankideari esan ohi diot herritarra artatzeko.",
-        es: "Si no sé euskera, le digo a mi compañera o compañero que sepa euskera para atender a la ciudadano/a.",
+        es: "Si no sé euskera, le digo a mi compañera o compañero que sepa euskera para atender a la ciudadanía.",
     },
     {
         id: "o4",
@@ -165,8 +165,8 @@ const writtenQuestions = [
     },
     {
         id: "w5",
-        eu: "Nire euskara mailak ahalbidetzen didan neurrian, idazkiak euskaraz sortu eta, ondoren, zuzenketa-zerbitzura bidali ohi ditut (3. HE / 4. HE dutenek).",
-        es: "En la medida que mi nivel de euskera me lo permite, suelo crear los escritos en euskera y los envío al servicio de corrección (para quienes tienen el PL3 o PL4).",
+        eu: "Nire euskara mailak ahalbidetzen didan neurrian, idazkiak euskaraz sortu eta, ondoren, zuzenketa-zerbitzura bidali ohi ditut.",
+        es: "En la medida que mi nivel de euskera me lo permite, suelo crear los escritos en euskera y los envío al servicio de corrección.",
     },
     {
         id: "w6",
@@ -1026,7 +1026,7 @@ export default function LanbideEuskaraSurvey(props: Partial<SurveyConfig> = {}) 
                     </h3>
                     <div style={{ display: "grid", gap: 16 }}>
                         <Field
-                            label="Izen-abizenak / Nombre y apellidos"
+                            label="Izen-abizenak / Nombre y apellidos (Hautazkoa / Opcional)"
                             name="nombre"
                             value={personalInfo.nombre}
                             onChange={handleInfoChange}
