@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Inkesta Euskara · Lanbide",
+  title: "Euskara Inkesta · Lanbide-Euskal Enplegu Zerbitzu Publikoa",
   description: "Prestakuntza beharrak identifikatzeko inkesta",
 };
 
